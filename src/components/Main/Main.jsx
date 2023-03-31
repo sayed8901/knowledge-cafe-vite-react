@@ -10,10 +10,23 @@ const Main = () => {
         fetch('data.json')
         .then(res => res.json())
         .then(data => setBlogs(data))
-    } , [])
+    } , []);
+    
+
+    const [readTime, setReadTime] = useState("");
 
     const addReadTime = (time) => {
-        console.log('time added', time)
+        const previousReadTime = JSON.parse(localStorage.getItem('readTime'));
+        if(previousReadTime){
+            const sumTime = previousReadTime + time;
+            localStorage.setItem('readTime', sumTime);
+            setReadTime(sumTime);
+        }
+        else{
+            localStorage.setItem('readTime', time);
+            setReadTime(time);
+        }
+        console.log(previousReadTime, time)
     }
 
     return (
@@ -29,7 +42,7 @@ const Main = () => {
                 }
             </div>
             <div>
-                <Cart></Cart>
+                <Cart readTime = {readTime}></Cart>
             </div>
         </div>
     );
