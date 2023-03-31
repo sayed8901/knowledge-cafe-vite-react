@@ -34,6 +34,43 @@
       "author": "Mr. Sohel",
       "publishedDate": "April 01, 2023",
       "readTimeInMinutes": 25
+    },
+
+    {
+      "id": 5,
+      "blogTitle": "Curious to learn AngularJS, a complete front-end framework",
+      "coverImage": "https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "authorThumbnail": "https://images.unsplash.com/photo-1590959651373-a3db0f38a961?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "author": "Mr. Shahjalal",
+      "publishedDate": "March 30, 2023",
+      "readTimeInMinutes": 25
+    },
+    {
+      "id": 6,
+      "blogTitle": "Comparative statements among ReactJS, AngularJS & VueJS",
+      "coverImage": "https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "authorThumbnail": "https://images.unsplash.com/photo-1589149098258-3e9102cd63d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "author": "Mr. Munirul",
+      "publishedDate": "April 02, 2023",
+      "readTimeInMinutes": 20
+    },
+    {
+      "id": 7,
+      "blogTitle": "Learn 'Python' to build your database concept",
+      "coverImage": "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "authorThumbnail": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "author": "Mr. Bodrul",
+      "publishedDate": "March 30, 2023",
+      "readTimeInMinutes": 15
+    },
+    {
+      "id": 8,
+      "blogTitle": "A talk regarding recent trend in the web development field",
+      "coverImage": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "authorThumbnail": "https://images.unsplash.com/photo-1597589827703-f4b68eafa0ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "author": "Mr. Nurunnabi Azad",
+      "publishedDate": "April 02, 2023",
+      "readTimeInMinutes": 10
     }
   ]
   

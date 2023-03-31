@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Main.css';
 import News from '../News/News';
+import Cart from '../Cart/Cart';
 
 const Main = () => {
     const [blogs, setBlogs] = useState([]);
@@ -11,19 +12,24 @@ const Main = () => {
         .then(data => setBlogs(data))
     } , [])
 
+    const addReadTime = (time) => {
+        console.log('time added', time)
+    }
 
     return (
         <div className='main-container'>
-            <div className='blog-container'>
+            <div>
                 {
-                    blogs.map(news => <News
+                    blogs.map(news => 
+                    <News
                         newsItem = {news}
                         key = {news.id}
+                        addReadTime = {addReadTime}
                     ></News>)
                 }
             </div>
-            <div className='cart-container'>
-                <h2>cart</h2>
+            <div>
+                <Cart></Cart>
             </div>
         </div>
     );

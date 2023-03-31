@@ -1,6 +1,6 @@
 .news{
     border-bottom: 3px solid lightgray;
-    margin-bottom: 40px;
+    margin-bottom: 48px;
 }
 .news img{
     width: 100%;
@@ -24,6 +24,24 @@
     height: 60px;
     border-radius: 50%;
 }
-.author-info h4, p{
+.author-info h3, p{
     margin: 0 auto;
+}
+.news button{
+    background-color: transparent;
+}
+.news .btn-read{
+    color: #6047EC;
+    border: none;
+    margin-bottom: 24px;
+    padding: 10px 5px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.news .btn-read:hover{
+    text-decoration: underline;
+}
+.news h2{
+    font-weight: 700;
+    font-size: 40px;
 }

@@ -26,3 +26,7 @@ nav.header .links a{
 nav.header .links a:hover{
     color: crimson;
 }
+.header h2{
+    font-weight: 700;
+    font-size: 40px;
+}
