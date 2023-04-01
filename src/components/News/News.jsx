@@ -6,8 +6,12 @@ import { faBookBookmark, faBookmark } from '@fortawesome/free-solid-svg-icons';
 const News = (props) => {
     const {id, blogTitle, coverImage, authorThumbnail, author, publishedDate, readTimeInMinutes} = props.newsItem;
 
+    // receiving 'addReadTime' function from its parent 'Main.jsx' component via props
     const addReadTime = props.addReadTime;
 
+    const handleBookmarked = props.handleBookmarked;
+
+    
     return (
         <div className='news'>
             <img src={coverImage} alt="" />
@@ -21,10 +25,13 @@ const News = (props) => {
                 </div>
                 <div className='flex1'>
                     <p>{readTimeInMinutes} min read</p>
-                    <button><FontAwesomeIcon icon={faBookmark} /></button>
+                    <button onClick={() => handleBookmarked(props.newsItem)}
+                    ><FontAwesomeIcon icon={faBookmark} /></button>
                 </div>
             </div>
             <h2>{blogTitle}</h2>
+
+            {/* usage of 'addReadTime' function which get via props from 'Main.jsx' */}
             <button onClick={() => addReadTime(readTimeInMinutes)} className='btn-read'>Mark as read</button>
         </div>
     );
