@@ -30,3 +30,16 @@ nav.header .links a:hover{
     font-weight: 700;
     font-size: 40px;
 }
+
+@media only screen and (max-width: 576px) {
+    .header {
+        display: inline;
+    }
+    .header h2{
+        margin: 20px auto;
+        text-align: center;
+    }
+    .links{
+        padding-bottom: 32px;
+    }
+}

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Cart.css'
+import './Cart.css';
 import ShowBlogTitle from '../ShowBlogTitle/ShowBlogTitle';
 
 const Cart = (props) => {
@@ -30,7 +30,7 @@ const Cart = (props) => {
         if(getBlogsFromLocalStorage){
             setBlog(getBlogsFromLocalStorage);
         }
-        console.log(blog);
+        // console.log(blog);
     } , [cart]);
     
 
@@ -48,6 +48,7 @@ const Cart = (props) => {
                         blog.map(news => (
                             <ShowBlogTitle 
                                 blog = {news}
+                                key = {news.id}
                             ></ShowBlogTitle>
                         ))
                     }

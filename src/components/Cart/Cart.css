@@ -1,6 +1,7 @@
 .cart-container{
     position: sticky;
     top: 32px;
+    margin-bottom: 48px;
 }
 
 .time-spent{

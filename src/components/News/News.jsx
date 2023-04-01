@@ -25,13 +25,17 @@ const News = (props) => {
                 </div>
                 <div className='flex1'>
                     <p>{readTimeInMinutes} min read</p>
-                    <button onClick={() => handleBookmarked(props.newsItem)}
-                    ><FontAwesomeIcon icon={faBookmark} /></button>
+
+                    {/* usage of 'handleBookmarked' function which got via props from 'Main.jsx' */}
+                    <button 
+                        onClick={() => handleBookmarked(props.newsItem)}>
+                            <FontAwesomeIcon icon={faBookmark} />
+                    </button>
                 </div>
             </div>
             <h2>{blogTitle}</h2>
 
-            {/* usage of 'addReadTime' function which get via props from 'Main.jsx' */}
+            {/* usage of 'addReadTime' function which got via props from 'Main.jsx' */}
             <button onClick={() => addReadTime(readTimeInMinutes)} className='btn-read'>Mark as read</button>
         </div>
     );
