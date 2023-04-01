@@ -46,7 +46,8 @@
     font-size: 40px;
 }
 
-@media only screen and (max-width: 576px) {
+
+@media only screen and (max-width: 992px) {
     .news h2{
         font-size: 24px;
     }
