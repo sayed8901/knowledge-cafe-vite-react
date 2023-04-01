@@ -30,7 +30,7 @@ const Cart = (props) => {
         if(getBlogsFromLocalStorage){
             setBlog(getBlogsFromLocalStorage);
         }
-        console.log(getBlogsFromLocalStorage, blog);
+        console.log(blog);
     } , [cart]);
     
 
@@ -43,9 +43,14 @@ const Cart = (props) => {
             <div className='cart-panel'>
                 <h3>Bookmarked Blogs: {blog.length}</h3>
                 {/* <ShowBlogTitle cart = {cart}></ShowBlogTitle> */}
-                <div className='blog-heading'>
-                    <h4>blog title goes here..</h4>
-                    
+                <div>
+                    {
+                        blog.map(news => (
+                            <ShowBlogTitle 
+                                blog = {news}
+                            ></ShowBlogTitle>
+                        ))
+                    }
                 </div>
             </div>
         </div>

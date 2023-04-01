@@ -49,9 +49,9 @@ const Main = () => {
     // console.log(news, exists);
 
     if(!exists) {
-      cart = [...cart, news];
-      localStorage.setItem("blogTitle", JSON.stringify(cart));
-    } 
+        cart = [...cart, news];
+        localStorage.setItem("blogTitle", JSON.stringify(cart));
+    }
     else {
       alert("already bookmarked!!");
 
