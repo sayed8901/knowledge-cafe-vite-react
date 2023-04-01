@@ -17,6 +17,7 @@
 .flex1{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 12px;
 }
 .flex1 img{
@@ -26,6 +27,7 @@
 }
 .author-info h3, p{
     margin: 0 auto;
+    /* text-align: center; */
 }
 .news button{
     background-color: transparent;
@@ -46,6 +48,14 @@
     font-size: 40px;
 }
 
+@media only screen and (max-width: 576px) {
+    .flex{
+        flex-direction: column;
+    }
+    .author-info{
+        text-align: center;
+    }
+}
 
 @media only screen and (max-width: 992px) {
     .news h2{

@@ -1,21 +1,29 @@
+.about-react{
+    margin-top: 48px;
+}
 .about-react .info{
     text-align: center;
-    margin: 64px;
+    margin: 36px;
 }
 .description{
     margin-bottom: 48px;
 }
 
-h3{
+.description h3{
     margin-bottom: 20px;
     margin-top: 50px;
 }
-p{
+.description p{
     padding: 0 48px;
 }
 
+
 @media only screen and (max-width: 576px) {
-    p {
+    .about-react .info{
+        margin: 64px 32px;
+    }
+    .description p {
         padding: 0px 24px;
     }
 }
+
