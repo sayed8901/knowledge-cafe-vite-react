@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Cart.css'
+import ShowBlogTitle from '../ShowBlogTitle/ShowBlogTitle';
 
 const Cart = (props) => {
     // readTime part:
@@ -21,6 +22,17 @@ const Cart = (props) => {
     
     const cart = props.cart;
 
+    const [blog, setBlog] = useState([]);
+
+    const getBlogsFromLocalStorage = JSON.parse(localStorage.getItem('blogTitle'));
+
+    useEffect( () => {
+        if(getBlogsFromLocalStorage){
+            setBlog(getBlogsFromLocalStorage);
+        }
+        console.log(getBlogsFromLocalStorage, blog);
+    } , [cart]);
+    
 
     return (
         <div className='cart-container'>
@@ -29,9 +41,11 @@ const Cart = (props) => {
                 <h3>Spent time on read: {updatedTime} min</h3>
             </div>
             <div className='cart-panel'>
-                <h3>Bookmarked Blogs: {cart.length}</h3>
+                <h3>Bookmarked Blogs: {blog.length}</h3>
+                {/* <ShowBlogTitle cart = {cart}></ShowBlogTitle> */}
                 <div className='blog-heading'>
                     <h4>blog title goes here..</h4>
+                    
                 </div>
             </div>
         </div>
