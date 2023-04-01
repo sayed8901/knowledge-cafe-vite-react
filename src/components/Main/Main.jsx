@@ -78,8 +78,9 @@ const Main = () => {
           ))
         }
       </div>
+
       <div>
-        {/* passing the 'readTime' to 'Cart'  component */}
+        {/* passing the 'readTime' & full 'cart' to 'Cart' component */}
         <Cart 
             readTime={readTime} 
             cart={cart}

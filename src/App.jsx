@@ -8,6 +8,7 @@ import Main from './components/Main/Main';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import AboutReact from './components/AboutReact/AboutReact';
 
 
 function App() {
@@ -16,7 +17,9 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
+      
       <Main></Main>
+      <AboutReact></AboutReact>
 
       <ToastContainer></ToastContainer>
     </div>
